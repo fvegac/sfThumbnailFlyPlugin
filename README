@@ -12,10 +12,10 @@ file that was distributed with this source code.
 
 == Installation ==
 
-To install the plugin use `symfony plugin-install` command
+To install the plugin use `symfony plugin:install` command
 {{{
 
-symfony plugin-install http://plugins.symfony-project.com/sfThumbnailFlyPlugin
+symfony plugin:install sfThumbnailFlyPlugin
 
 }}}
 
@@ -25,7 +25,7 @@ Enable one or more modules in your settings.yml  * jsThumbnail
 
 all:
   .settings:
-    enabled_modules:        [ default, jsThumbnail ]
+    enabled_modules:        [ default, sfThumbnailFly ]
     
 }}}
 
@@ -39,7 +39,7 @@ In your template call something like this:
 
 The Parameter "mode" can be "normal", "crop" or "stretch"
 you can call the Thumbnail directly:
-www.yourhost.com/yourapp.php/jsThumbnail/thumbnail?img=uploads/pictures/image.jpg&maxx=100&maxy=80&mode=crop
+www.yourhost.com/app.php/sfThumbnailFly/thumbnail?img=uploads/pictures/image.jpg&maxx=100&maxy=80&mode=crop
 
 {{{
 
